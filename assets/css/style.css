@@ -21,17 +21,15 @@ a{
     .container{
         width: 85%;
         margin: 0 auto;
-        border: 1px solid red;
     }
 }
 /*
 |---------------------|
-|      HEADER      |
+|      HEADER         |
 |---------------------|
 */
 header{
     width: 100%;
-    border-bottom: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,7 +50,88 @@ header .grid li a{
     padding: 10px 20px;
     border-radius: 30px;
     color: white;
+    transition: all .3s ease-in-out;
+
+}
+.grid li a:hover{
+    background-color:transparent;
 }
 header .grid li:not(header .grid li:last-child){
     margin-right: 20px;
+}
+/*
+|---------------------|
+|      HERO           |
+|---------------------|
+*/
+.hero{
+    width: 100%;
+    background-image: url('../img/Novo-posicionamento-da-marca.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.hero i{
+    font-size: 4rem;
+    color: #333333;
+}
+
+/*
+|---------------------|
+|      SERVIÇOS       |
+|---------------------|
+*/
+
+.services{
+    color: #333333;
+    padding: 20px 0;
+}
+.services h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 20px 0;
+}
+.services .items {
+    display: flex;
+    flex-wrap: wrap;
+}
+.services .items .item{
+    flex-basis: 100%;
+    display: flex;
+    margin: 25px;
+}
+.item .text{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 30px 30px;
+    height: 100%;
+}
+.item .text h3{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.item .text p{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+.item .text button{
+    width: 150px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.item .text button:hover{
+    background-color: #333333;
+}
+.content-02 img{
+    order: 2;
+}
+.content-04 img{
+    order: 2;
 }
